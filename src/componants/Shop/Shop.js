@@ -15,9 +15,10 @@ const Shop = () => {
     }, []);
 
     const clickToAdd = (product) => { 
-        console.log(product);
+        // console.log(product);
         const newCart = [...cart, product];
-        setCart(newCart);    
+        setCart(newCart);
+        // console.log(newCart)    
     }
     
 
@@ -28,14 +29,15 @@ const Shop = () => {
                 products.map(product => <Product
                     products={product}
                     key={product.id}
-                    clickToAdd={clickToAdd}
-                                        
+                    clickToAdd={clickToAdd}                                        
                     ></Product>)
             }
             
             </div>
             <div className="sidebar">
-            <Sidebar cart={cart}></Sidebar>
+                {
+                    cart.map(product => <h3 key={product.id}>{product.name}</h3>)
+                }            
             </div>
         </div>
     );
