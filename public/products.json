@@ -3,13 +3,13 @@
       "id": "1",
       "name": "Sadek Golla", 
       "price": 300,
-      "img": ""
+      "img": "https://ruchibazar.com/wp-content/uploads/2020/08/Sadek-Misty.jpg"
     },
     {
         "id": "2",
         "name": "Gopaler Chomcom", 
         "price": 350,
-        "img": ""
+        "img": "https://ruchibazar.com/wp-content/uploads/2020/08/Sadek-Misty.jpg"
       },
       {
         "id": "3",
