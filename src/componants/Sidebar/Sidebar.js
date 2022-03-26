@@ -5,7 +5,7 @@ const Sidebar = (props) => {
 
     return (
         <div>            
-            <h3></h3>           
+            <button>Select The lucky One</button>          
         </div>
     );
 };

@@ -20,6 +20,8 @@ const Shop = () => {
         setCart(newCart);
         // console.log(newCart)    
     }
+
+    const clicktoRemove = 
     
 
     return (
@@ -37,7 +39,8 @@ const Shop = () => {
             <div className="sidebar">
                 {
                     cart.map(product => <h3 key={product.id}>{product.name}</h3>)
-                }            
+                }
+                <Sidebar></Sidebar>            
             </div>
         </div>
     );
