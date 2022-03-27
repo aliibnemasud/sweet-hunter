@@ -13,3 +13,9 @@
 .sidebar {
     background-color: aliceblue;
 }
+
+@media (max-width: 576px) {    
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
