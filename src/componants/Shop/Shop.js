@@ -19,9 +19,7 @@ const Shop = () => {
         const newCart = [...cart, product];
         setCart(newCart);
         // console.log(newCart)    
-    }
-
-    const clicktoRemove = 
+    }   
     
 
     return (
