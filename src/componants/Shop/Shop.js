@@ -19,8 +19,19 @@ const Shop = () => {
         const newCart = [...cart, product];
         setCart(newCart);
         // console.log(newCart)    
-    }   
+    }
+
+    const bestMatch = () => {
+        console.log('Clicked')
+    }
     
+    //  Reset cart
+    const resetCart = () =>{
+        setCart([]);
+    }
+
+    
+        
 
     return (
         <div className='shop'>
@@ -29,7 +40,7 @@ const Shop = () => {
                 products.map(product => <Product
                     products={product}
                     key={product.id}
-                    clickToAdd={clickToAdd}                                        
+                    clickToAdd={clickToAdd}                                                                                
                     ></Product>)
             }
             
@@ -38,7 +49,7 @@ const Shop = () => {
                 {
                     cart.map(product => <h3 key={product.id}>{product.name}</h3>)
                 }
-                <Sidebar></Sidebar>            
+                <Sidebar resetCart={resetCart} bestMatch = {bestMatch}></Sidebar>            
             </div>
         </div>
     );
